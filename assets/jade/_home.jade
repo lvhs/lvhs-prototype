@@ -1,0 +1,17 @@
+.app-page(data-page='home')
+  .app-topbar
+    .app-title LIVEHOUSE
+    .right.app-button.menu(data-target="menu")
+      span.glyphicon.glyphicon-th-list(style="background-image: none;")
+  .app-content
+    .app-section
+      .row
+        - for (var i = 0 ; i < 10; i++) 
+          .col-sm-6.col-md-4
+            .thumbnail
+              img(src="http://lorempixel.com/640/480/abstract/" alt="...")
+              .caption
+                h3 Artist Name
+                p Artist Description
+                p 
+                  button.app-button(data-target="artist_detail" style="margin: 0 auto; width: 100%;") Detail

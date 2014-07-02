@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title LIVE HOUSE (preview)
+    meta(content="text/html; charset=utf-8" http-equiv="Content-Type")
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui')
+    link(rel='stylesheet' href='assets/css/app.min.css')
+    link(rel="stylesheet" href="assets/css/main.css")
+    link(rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap-theme.min.css")
+    style
+      /* TODO */
+  body
+    include assets/jade/_splash
+    include assets/jade/_init
+    include assets/jade/_home
+    include assets/jade/_menu
+    include assets/jade/artist/_list
+    include assets/jade/artist/_detail
+    include assets/jade/_player
+    include assets/jade/_playlist
+    include assets/jade/_share
+    include assets/jade/_inquiry
+
+    // TODO: webpack
+    script(src='assets/js/lib/json2.js')
+    script(src='assets/js/lib/underscore-min.js')
+    script(src='assets/js/lib/jquery-1.11.1.min.js')
+    script(src='assets/js/lib/jquery.cookie.js')
+    script(src='assets/js/lib/app.min.js')
+    script(src='assets/vendor/bootstrap/js/bootstrap.min.js')
+    script(src='assets/js/lh.js')
+    script(src='assets/js/controller/splash.js')
+    script(src='assets/js/controller/init.js')
+    script(src='assets/js/controller/home.js')
+    script(src='assets/js/controller/menu.js')
+    script(src='assets/js/controller/player.js')
+    script(src='assets/js/app.js')

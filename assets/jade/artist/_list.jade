@@ -1,0 +1,27 @@
+.app-page(data-page="artist_list")
+  .app-topbar
+    .app-title アーティスト一覧
+    .app-button(data-back) Back
+    .right.app-button.menu(data-target="menu")
+      span.glyphicon.glyphicon-th-list(style="background-image: none;")
+  .app-content
+    .app-section
+      .row
+        .col-xs-12
+          form.form-inline(role='form')
+            .form-group
+              .input-group
+                .input-group-addon
+                  span.glyphicon.glyphicon-search
+                input.form-control(type='text', placeholder='Enter Keyword' style="width: 100%;")
+
+      .row
+        - for (var i = 0 ; i < 10; i++) 
+          .col-sm-6.col-md-4
+            .thumbnail
+              img(src="http://lorempixel.com/640/480/abstract/" alt="...")
+              .caption
+                h3 Artist Name
+                p Artist Description
+                p 
+                  button.app-button(data-target="artist_detail" style="margin: 0 auto; width: 100%;") Detail
